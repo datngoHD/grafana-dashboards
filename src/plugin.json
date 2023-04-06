@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Illumass",
+  "id": "grafana-app-plugin",
+  "info": {
+    "keywords": [
+      "app"
+    ],
+    "description": "",
+    "author": {
+      "name": "Dat Ngo"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "dashboard",
+      "name": "Dashboard",
+      "path": "dashboards/dashboard.json",
+      "role": "Admin",
+      "uid": "Av57mRHVz",
+      "addToNav": true,
+      "defaultNav": true
+    },
+    {
+      "type": "page",
+      "name": "Map",
+      "path": "/a/grafana-app-plugin/map",
+      "role": "Admin",
+      "addToNav": true,
+      "defaultNav": false
+    },
+    {
+      "type": "page",
+      "name": "Assets",
+      "path": "/a/grafana-app-plugin/assets",
+      "role": "Admin",
+      "addToNav": true,
+      "defaultNav": false
+    },
+    {
+      "type": "page",
+      "name": "Devices",
+      "path": "/a/grafana-app-plugin/devices",
+      "role": "Admin",
+      "addToNav": true,
+      "defaultNav": false
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=9.3.8",
+    "plugins": []
+  }
+}
